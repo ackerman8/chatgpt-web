@@ -482,9 +482,16 @@ onUnmounted(() => {
           :class="[isMobile ? 'p-2' : 'p-4']"
         >
           <template v-if="!dataSources.length">
-            <div class="flex items-center justify-center mt-4 text-center text-neutral-300">
-              <SvgIcon icon="ri:bubble-chart-fill" class="mr-2 text-3xl" />
-              <span>Aha~</span>
+            <div class="items-center justify-center mt-4  text-center text-neutral-300">
+              <div>
+                此项目完全免费且作为开源学习使用。并且不会有任何形式的卖号、付费服务、讨论群、讨论组等行为。谨防受骗。
+              </div>
+              <div>
+                如果你觉得这个项目对你有帮助，可以关注下我的订阅号🍺，我会非常感谢你的支持～
+              </div>
+              <div>
+                <img style="width: 200px;margin:10px auto" src="/skm.jpg" alt="">
+              </div>
             </div>
           </template>
           <template v-else>
